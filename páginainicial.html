@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./páginainicial.css">
+    <title>pagina inicial</title>
+</head>
+<body>
+    <ul>
+    <li><a href="./index.html">Casa</a></li>
+    <li><a href="páginainicial.html">Sobre</a></li>
+    <li><a href="./curso.html">Curso</a></li>
+    <li><a href="./equipe.html">Equipe</a></li>
+    <li><a href="./contato.html">Contato</a></li>
+    </ul>
+    <div class="content">
+        <h1>Bem-Vindo a equipe que irá te ajudar a ter seu primeiro contato com programação</h1>
+        <p>Olá, somos alunos da uninassau paulista, somos os criadores desse site para ajudar a vocês terem o primeiro contato com a programação, pensamos em vocês quando criamos 
+            ele tem o foco de te ajudar a se interessar por programação
+             ou até melhor se interessar muito, mas para área de tecnologia, esse curso ele vai integrar cinco aulas da 
+             linguagem de programação c++, vão ser aulas básicas, mas é do básico que vem o avançado, se por acaso se interessarem mais pelo curso pensaremos em fazer, 
+             mas aulas para vocês, qualquer dúvida ou problema podem falar conosco, e não devemos esquecer o foco deve ser estudantes abrimos também para pessoas que já terminaram os estudos, mas o nosso maior foco é alcançar mais 
+             estudantes possíveis com esse curso, sejam bem-vindos ao nosso mundo cibernético.
+        </p>
+
+        <h3> Ao apetarem em curso estará lá as aulas, aproveitem muito e se divirtam fazendo códigos com c++.</h3>
+
+        <h4> Nossas aulas vão contar com:
+            introdução,
+            como baixar o aplicativo para fazer os códigos,
+            e três aulas codicando.
+        </h4>
+    </div>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <script>
+    var cursor = document.querySelector(".cursor");
+var cursor2 = document.querySelector(".cursor2");
+document.addEventListener("mousemove", function(e) {
+    cursor.style.left = e.clientX + "px"; // Use 'style.left' para definir a posição
+    cursor.style.top = e.clientY + "px";  // Use 'style.top' para definir a posição
+    cursor2.style.left = e.clientX + "px"; // Use 'style.left' para definir a posição
+    cursor2.style.top = e.clientY + "px";  // Use 'style.top' para definir a posição
+});
+        </script>
+</body>
+</html>

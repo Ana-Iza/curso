@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    height: 100hv;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+ul li a{
+    color: gray;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    position: relative;
+    transition: all .5s;
+}
+a:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+a::before{
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    height: 12px;
+    width: 12px;
+    border: 3px solid dodgerblue;
+    border-width: 0 0 3px 3px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+a::after{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    height: 12px;
+    width: 12px;
+    border: 3px solid dodgerblue;
+    border-width: 3px 3px 0 0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+a:hover::before{
+opacity: 1;
+bottom: -8px;
+left: -8px;
+}
+a:hover::after{
+    opacity: 1;
+    top:  -8px;
+    right: -8px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(./7587df77ef521cf98057d0028ee983f1.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "open sans", sans-serif;
+    color: #fff;
+    cursor: pointer;
+}
+.content p{
+    width: 700px;
+    line-height: 26px;
+    font-size: 18px;
+    text-align: justify;
+}
+.cursor{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #c6c6c6;
+    border-radius: 50px;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+}
+.cursor2{
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: #c6c6c6;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .15s;
+}
+.content:hover ~ .cursor{
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: #c6c6c6;
+    opacity: .5;
+}
+.content:hover ~ .cursor2{
+    opacity: 0;
+}
